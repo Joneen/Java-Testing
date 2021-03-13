@@ -15,6 +15,8 @@ public class BookShopTest {
 
     @Test
     public void myFirstTest(){
-        assertTrue(false);
+        BookShop Shop = new BookShop("BookShop");
+        int[] Basket = {4,2,1,1,1};
+        assertEquals(58,Shop.cost(Basket));
     }
 }
